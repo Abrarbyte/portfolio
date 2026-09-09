@@ -9,6 +9,7 @@ sane cache headers, so the Network panel here matches what visitors would get.
 """
 import http.server
 import gzip
+import mimetypes
 import os
 import socketserver
 import sys
@@ -17,6 +18,19 @@ try:
     import brotli
 except ImportError:
     brotli = None
+
+# Python's mimetypes knows none of these; without them everything ships as
+# application/octet-stream, which is one more variable when debugging load
+# failures. Real hosts send these correctly.
+for ext, mime in {
+    '.webp': 'image/webp',
+    '.woff2': 'font/woff2',
+    '.woff': 'font/woff',
+    '.glb': 'model/gltf-binary',
+    '.gltf': 'model/gltf+json',
+    '.mjs': 'application/javascript',
+}.items():
+    mimetypes.add_type(mime, ext)
 
 # Only text-ish formats benefit. glb is uncompressed binary and gains ~45%.
 # webp/woff2/mp3/png are already compressed - recompressing wastes CPU for ~0%.
