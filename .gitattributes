@@ -1,0 +1,3 @@
+# This is a byte-exact static mirror of a built site.
+# Disable ALL end-of-line conversion so checkouts reproduce the captured bytes.
+* -text

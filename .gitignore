@@ -1,0 +1,8 @@
+# python
+__pycache__/
+*.pyc
+
+# pre-git manual backups (git history supersedes these)
+*.bak
+*.pre_content_bak
+*.pre_sig_bak
