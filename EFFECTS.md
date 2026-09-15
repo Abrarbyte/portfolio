@@ -6,7 +6,7 @@ Every motion effect on the site, with what it does, where it lives, its tuning v
 
 | Chunk | Contains |
 |---|---|
-| `6712abba537b53ba.js` | WebGL canvas: work-card layer, 3D models, glass shader, particles, parallax, lens flare, signature |
+| `385bb61788a80c03.js` | WebGL canvas: work-card layer, 3D models, glass shader, particles, parallax, lens flare, signature |
 | `3b554495831d68b8.js` | Shell: fonts, audio, scramble text, scrollbar, footer, theme, pointer |
 | `0959a7c6aec18bb6.js` | `WORK_ITEMS` data (per-project layout + hover effect config) |
 | `3c6cc5b2fcccdee5.js` | Entry loader, route transition curtain, fonts-ready gate |
