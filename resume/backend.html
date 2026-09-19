@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>M. Abrar Patel — Python Backend Developer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: A4; margin: 10mm 13mm; }
+  body { font-family: Calibri, 'Segoe UI', Arial, sans-serif; font-size: 9.3pt; color: #1a1a1a; line-height: 1.24; max-width: 780px; margin: 0 auto; padding: 20px; background: #fff; }
+  h1 { font-size: 17pt; letter-spacing: 0.8px; color: #0f2d4a; }
+  .headline { font-size: 10pt; font-weight: 600; color: #2a5d8f; margin-top: 1px; }
+  .contact { font-size: 8.6pt; color: #444; margin-top: 3px; }
+  a { color: #2a5d8f; text-decoration: none; }
+  h2 { font-size: 9.4pt; text-transform: uppercase; letter-spacing: 1.1px; color: #0f2d4a; border-bottom: 1.2px solid #0f2d4a; padding-bottom: 1px; margin: 7px 0 3px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .job-title { font-weight: 700; font-size: 9.7pt; }
+  .links { font-size: 8.2pt; white-space: nowrap; color: #777; }
+  .links a { margin-left: 7px; }
+  .job-meta { font-style: italic; color: #555; font-size: 8.6pt; }
+  .stack { font-style: italic; color: #666; font-size: 8.4pt; }
+  ul { margin: 2px 0 4px 15px; }
+  li { margin-bottom: 1.2px; }
+  .skills p { margin-bottom: 1.2px; }
+  .entry { margin-bottom: 3.5px; }
+  p { margin-bottom: 1px; }
+  @media print { body { padding: 0; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>M. ABRAR PATEL</h1>
+  <div class="headline">Python Backend Developer &nbsp;|&nbsp; Django · DRF · Flask · PostgreSQL · REST APIs · Auth &amp; sessions</div>
+  <div class="contact">+91 7249361481 &nbsp;|&nbsp; abrarpatel454@gmail.com &nbsp;|&nbsp; <a href="https://abrarbyte-portfolio-web.vercel.app">abrarbyte-portfolio-web.vercel.app</a> &nbsp;|&nbsp; <a href="https://github.com/Abrarbyte">github.com/Abrarbyte</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/abrar-patel">linkedin.com/in/abrar-patel</a> &nbsp;|&nbsp; India · Anywhere · Available on notice period</div>
+</header>
+
+<h2>Profile Summary</h2>
+<p>Python backend developer at Aarmarks Media, working on a live multi-app SaaS suite — fixed JWT security vulnerabilities, built cross-app session revocation, and now sole engineer on a field-sales CRM (Django REST Framework + PostgreSQL). Previously a 6-month backend internship inside a live production Django codebase (DRF, WebSockets, GCP). Strong in relational data modelling, role-based access control, and REST API design.</p>
+
+<h2>Professional Experience</h2>
+<div class="entry">
+  <div class="head">
+    <div class="job-title">Software Developer — Aarmarks Media</div>
+    <div class="links">Live <a href="https://aarmarksmedia.com">aarmarksmedia.com</a> · Case study <a href="https://abrarbyte-portfolio-web.vercel.app/aitremarkiq">/aitremarkiq</a> · <a href="https://abrarbyte-portfolio-web.vercel.app/crm">/crm</a></div>
+  </div>
+  <div class="job-meta">Aug 2026 – Present · TriMarkity suite: Dashboard, CRM, MarkReach, AITremarkIQ, SocialSnap</div>
+  <ul>
+    <li>Fixed a critical auth-middleware vulnerability where a fallback decoded JWTs <em>without signature verification</em>, allowing forged admin identities; also fixed token-refresh bugs that logged users out on successful refresh.</li>
+    <li>Built cross-app session management, shipped to production: server-side token revocation (jti denylist), cross-tab logout via localStorage events, admin logout propagating across all 4 apps, token lifetime cut from 7 days to 1.</li>
+    <li>Sole developer of a field-sales CRM — Django + DRF + PostgreSQL, 5-level role hierarchy, GPS visit tracking, auto-generated daily reports; scoped a 30-module spec into a phased roadmap. Built and tested; launching shortly.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="job-title">Backend Developer Intern (AI/ML) — ABis Infotech Solutions</div>
+  <div class="job-meta">Remote · 6 Months</div>
+  <ul>
+    <li>Built and extended REST APIs with Django REST Framework inside an existing live production codebase.</li>
+    <li>Implemented real-time features with WebSockets (Django Channels); deployed services on Google Cloud Platform (Compute Engine, Cloud Storage).</li>
+    <li>Engineered Python data pipelines (TensorFlow/Keras) served through Django endpoints; worked via feature branches, pull requests, and code review.</li>
+  </ul>
+</div>
+
+<h2>Projects</h2>
+<div class="entry">
+  <div class="head">
+    <div class="job-title">DukaanAI — AI Business Platform for Shop Owners (Founder Project)</div>
+    <div class="links">GitHub <a href="https://github.com/Abrarbyte">Abrarbyte</a> · Case study <a href="https://abrarbyte-portfolio-web.vercel.app/dukaanai">/dukaanai</a></div>
+  </div>
+  <div class="stack">Python · Flask · MySQL · SQLAlchemy · Redis · Flutter · LangChain · Razorpay</div>
+  <ul>
+    <li>Built the full backend independently — Flask + MySQL, 8 relational tables, 45+ REST endpoints covering auth, inventory, billing, credit tracking, and reporting; JWT with bcrypt, Redis-backed rate limiting.</li>
+    <li>Integrated Razorpay/UPI-QR payments and WhatsApp automation (auto receipts, restock alerts, credit reminders); built the companion Flutter app (16 screens, Android/iOS).</li>
+    <li>Added a LangChain Hindi chatbot with tool-calling against the live API, plus an AI insights layer (dead-stock detection, demand prediction).</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="head">
+    <div class="job-title">ModelReceipt — Verifiable Inference Gateway (hackathon demo)</div>
+    <div class="links">Live <a href="https://modelreceipt.vercel.app">modelreceipt.vercel.app</a> · Code <a href="https://github.com/Abrarbyte/modelreceipt">github</a> · Case study <a href="https://abrarbyte-portfolio-web.vercel.app/modelreceipt">/modelreceipt</a></div>
+  </div>
+  <div class="stack">Next.js 15 · TypeScript · Neon Postgres · CooL SDK (cool-nwc) · Python client</div>
+  <ul>
+    <li>Built for the Northwind Cipher reverse hackathon on the CooL SDK. The SDK provides the cryptography (salted commitments, ML-DSA/Ed25519 signing, RFC 6962 log); I built the system around it.</li>
+    <li>OpenAI-compatible drop-in proxy with provider routing by key prefix; durable Postgres transparency log where a primary key on <code>leaf_index</code> turns a concurrent write into a detectable conflict rather than a silent fork.</li>
+    <li>HMAC-keyed subject references so no user identifier is ever stored; L0–L3 assurance ladder; verify-and-forge UI with embeddable badges; Python client over HTTP.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="head">
+    <div class="job-title">EVATE — Menswear Storefront</div>
+    <div class="links">GitHub <a href="https://github.com/Abrarbyte">Abrarbyte</a> · Case study <a href="https://abrarbyte-portfolio-web.vercel.app/evate">/evate</a></div>
+  </div>
+  <div class="stack">React 19 · TypeScript · Flask · SQLAlchemy</div>
+  <ul>
+    <li>Flask app factory with admin/shop/API blueprints; Flask-Login + CSRF (exempted for the JSON API); order items snapshot name and unit price at purchase so history survives price changes.</li>
+  </ul>
+</div>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <p><strong>Languages:</strong> Python (OOP, data structures), SQL, JavaScript, TypeScript, PHP 8, C, C++, C#</p>
+  <p><strong>Backend &amp; APIs:</strong> Django, Django REST Framework, Flask, FastAPI, REST API design, SQLAlchemy ORM, Pydantic, migrations, JWT auth (simplejwt, python-jose), session management</p>
+  <p><strong>Security:</strong> role-based access control, bcrypt, CSRF protection, SQL-injection prevention (prepared statements), token revocation, HMAC-keyed references</p>
+  <p><strong>Databases:</strong> PostgreSQL, MySQL, SQLite, MongoDB — schema design, relational modelling, query optimisation, indexing</p>
+  <p><strong>Other:</strong> WebSockets (Django Channels), Celery + Redis, Razorpay/UPI, LangChain, TensorFlow/Keras, Pandas</p>
+  <p><strong>Cloud &amp; Tools:</strong> Google Cloud Platform, Vercel, Git/GitHub (branching, PRs, code review), Docker, Postman, PyTest, unittest, VS Code</p>
+</div>
+
+<h2>Education &amp; Certifications</h2>
+<p><strong>Bachelor of Computer Applications (BCA)</strong>, 2023 – 2026 (final year) — Vivekanand College, Kolhapur &nbsp;·&nbsp; Prepverse ML Contest — strong overall performance</p>
+</body>
+</html>

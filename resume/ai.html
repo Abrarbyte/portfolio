@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>M. Abrar Patel — AI Engineer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @page { size: A4; margin: 11mm 13mm; }
+  body { font-family: Calibri, 'Segoe UI', Arial, sans-serif; font-size: 9.4pt; color: #1a1a1a; line-height: 1.25; max-width: 780px; margin: 0 auto; padding: 20px; background: #fff; }
+  h1 { font-size: 17pt; letter-spacing: 0.8px; color: #3b1f4a; }
+  .headline { font-size: 10pt; font-weight: 600; color: #6b3fa0; margin-top: 1px; }
+  .contact { font-size: 8.6pt; color: #444; margin-top: 3px; }
+  a { color: #6b3fa0; text-decoration: none; }
+  h2 { font-size: 9.4pt; text-transform: uppercase; letter-spacing: 1.1px; color: #3b1f4a; border-bottom: 1.2px solid #3b1f4a; padding-bottom: 1px; margin: 7px 0 3px; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .job-title { font-weight: 700; font-size: 9.7pt; }
+  .links { font-size: 8.2pt; white-space: nowrap; color: #777; }
+  .links a { margin-left: 7px; }
+  .job-meta { font-style: italic; color: #555; font-size: 8.6pt; }
+  .stack { font-style: italic; color: #666; font-size: 8.4pt; }
+  ul { margin: 2px 0 4px 15px; }
+  li { margin-bottom: 1.2px; }
+  .skills p { margin-bottom: 1.2px; }
+  .entry { margin-bottom: 3.5px; }
+  p { margin-bottom: 1px; }
+  @media print { body { padding: 0; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>M. ABRAR PATEL</h1>
+  <div class="headline">AI Engineer &nbsp;|&nbsp; Python · LangChain · TensorFlow · Verifiable AI · REST APIs</div>
+  <div class="contact">+91 7249361481 &nbsp;|&nbsp; abrarpatel454@gmail.com &nbsp;|&nbsp; <a href="https://abrarbyte-portfolio-web.vercel.app">abrarbyte-portfolio-web.vercel.app</a> &nbsp;|&nbsp; <a href="https://github.com/Abrarbyte">github.com/Abrarbyte</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/abrar-patel">linkedin.com/in/abrar-patel</a> &nbsp;|&nbsp; India · Anywhere · Available on notice period</div>
+</header>
+
+<h2>Profile Summary</h2>
+<p>AI engineer with a backend foundation: Python data pipelines (TensorFlow, Keras) from a 6-month AI/ML internship, a LangChain tool-calling chatbot shipped inside a live product, and a verifiable-inference gateway that gives every AI completion a signed, independently checkable receipt. Comfortable across the applied-AI workflow — data handling, model training and evaluation, and wiring ML/LLM components into production backends (Django/Flask REST APIs).</p>
+
+<h2>Projects</h2>
+<div class="entry">
+  <div class="head">
+    <div class="job-title">ModelReceipt — Verifiable Inference Gateway (hackathon demo)</div>
+    <div class="links">Live <a href="https://modelreceipt.vercel.app">modelreceipt.vercel.app</a> · Code <a href="https://github.com/Abrarbyte/modelreceipt">github</a> · Case study <a href="https://abrarbyte-portfolio-web.vercel.app/modelreceipt">/modelreceipt</a></div>
+  </div>
+  <div class="stack">Next.js 15 · TypeScript · Neon Postgres · CooL SDK (cool-nwc) · Python client</div>
+  <ul>
+    <li>Built for the Northwind Cipher reverse hackathon on the CooL SDK. Every completion returns a receipt naming the model, version and deployment, committed to the prompt and answer without storing either, appended to a live append-only transparency log, verifiable offline with no account.</li>
+    <li>The SDK provides the cryptography (salted commitments, ML-DSA/Ed25519 signing, RFC 6962 log, seven-domain verification). I built the system around it: an OpenAI-compatible drop-in proxy with provider routing, the durable Postgres log where a primary key on <code>leaf_index</code> makes concurrent writes a detectable conflict, HMAC-keyed subject references so no identifier is stored, an L0–L3 assurance ladder, the verify-and-forge UI, and a Python client.</li>
+    <li>Documented limits honestly: receipts from this deployment are <code>mode: simulated</code> (no confidential-computing hardware), so the ladder caps at L0 and the model name is a claim, not evidence.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="head">
+    <div class="job-title">DukaanAI — AI Business Platform for Shop Owners (Founder Project)</div>
+    <div class="links">GitHub <a href="https://github.com/Abrarbyte">Abrarbyte</a> · Case study <a href="https://abrarbyte-portfolio-web.vercel.app/dukaanai">/dukaanai</a></div>
+  </div>
+  <div class="stack">LangChain · Python · Flask · MySQL · SQLAlchemy · Redis · Flutter · Razorpay</div>
+  <ul>
+    <li>Built a LangChain-powered Hindi-language chatbot with tool-calling, integrated into a live merchant platform — reads and writes against a Flask + MySQL backend (8 relational tables, 45+ REST endpoints).</li>
+    <li>Designed an AI insights layer — dead-stock detection and demand prediction — surfacing business intelligence directly to store owners.</li>
+    <li>Independently built the full platform around it: backend (JWT + bcrypt auth, inventory, billing, credit tracking, reporting), Flutter app (16 screens), Razorpay/UPI + WhatsApp automation.</li>
+  </ul>
+</div>
+
+<h2>Professional Experience</h2>
+<div class="entry">
+  <div class="job-title">AI/ML Intern, Backend — ABis Infotech Solutions</div>
+  <div class="job-meta">Remote · 6 Months</div>
+  <ul>
+    <li>Wrote Python data pipelines with TensorFlow and Keras — ingestion, preprocessing, feature preparation, model training, evaluation, and prediction.</li>
+    <li>Built AI projects including Next Word Prediction, Cat &amp; Dog Classification, Mask Detection, Image Captioning, Face Recognition, and Stock Price Prediction.</li>
+    <li>Served model-backed features through Django REST Framework APIs in a live production codebase; real-time updates with WebSockets (Django Channels); deployed on Google Cloud Platform.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="head">
+    <div class="job-title">Software Developer — Aarmarks Media</div>
+    <div class="links">Live <a href="https://aarmarksmedia.com">aarmarksmedia.com</a> · Case study <a href="https://abrarbyte-portfolio-web.vercel.app/aitremarkiq">/aitremarkiq</a></div>
+  </div>
+  <div class="job-meta">Aug 2026 – Present · TriMarkity suite incl. AITremarkIQ, SocialSnap</div>
+  <ul>
+    <li>Work across a live multi-app SaaS suite including the AITremarkIQ AI product and SocialSnap's keyword-triggered automation engine; fixed a JWT signature-verification vulnerability and shipped cross-app session revocation to production.</li>
+    <li>Sole developer of a field-sales CRM (Django + DRF + PostgreSQL) with auto-generated daily reports and performance analytics — aggregating GPS visits, calls, and sales into automated insights.</li>
+  </ul>
+</div>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <p><strong>AI/ML:</strong> TensorFlow, Keras, Scikit-learn, Pandas, NumPy — data preprocessing, feature engineering, model training &amp; evaluation, applied data pipelines</p>
+  <p><strong>LLM / GenAI:</strong> LangChain, tool-calling agents, prompt-driven chatbot design, OpenAI-compatible gateways</p>
+  <p><strong>Verifiable AI:</strong> signed inference receipts, transparency logs (RFC 6962), attestation levels, offline verification — via the CooL SDK</p>
+  <p><strong>Languages:</strong> Python (OOP, data structures), SQL, JavaScript, TypeScript, PHP 8, C, C++, C#</p>
+  <p><strong>Backend &amp; APIs:</strong> Django, Django REST Framework, Flask, FastAPI, Next.js, SQLAlchemy, Pydantic, JWT auth, WebSockets, Celery + Redis</p>
+  <p><strong>Databases:</strong> PostgreSQL (Neon), MySQL, SQLite, MongoDB — schema design, relational modelling, query optimisation</p>
+  <p><strong>Cloud &amp; Tools:</strong> Google Cloud Platform, Vercel, Git/GitHub, Docker, Postman, PyTest, unittest, VS Code</p>
+</div>
+
+<h2>Education &amp; Certifications</h2>
+<p><strong>Bachelor of Computer Applications (BCA)</strong>, 2023 – 2026 (final year) — Vivekanand College, Kolhapur &nbsp;·&nbsp; Prepverse ML Contest — strong overall performance</p>
+</body>
+</html>
