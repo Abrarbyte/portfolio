@@ -10,6 +10,8 @@ const ROOT = path.join(__dirname, '..');
 const JOBS = [
   ['backend.html', 'Abrar_Patel_Backend_Developer.pdf'],
   ['ai.html', 'Abrar_Patel_AI_Engineer.pdf'],
+  ['general.html', 'Abrar_Patel_Software_Engineer.pdf'],
+  ['aiml.html', 'Abrar_Patel_AI_ML_Engineer.pdf'],
 ];
 
 (async () => {

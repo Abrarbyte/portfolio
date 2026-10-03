@@ -34,7 +34,7 @@
 </header>
 
 <h2>Profile Summary</h2>
-<p>Python backend developer at Aarmarks Media, working on a live multi-app SaaS suite — fixed JWT security vulnerabilities, built cross-app session revocation, and now sole engineer on a field-sales CRM (Django REST Framework + PostgreSQL). Previously a 6-month backend internship inside a live production Django codebase (DRF, WebSockets, GCP). Strong in relational data modelling, role-based access control, and REST API design.</p>
+<p>Python backend developer at Aarmarks Media, working on a live multi-app SaaS suite — fixed JWT security vulnerabilities, built cross-app session revocation, and sole engineer of a live field-sales CRM (Flutter + Django REST Framework + PostgreSQL + Redis). Previously a 6-month backend internship inside a live production Django codebase (DRF, WebSockets, GCP). Strong in relational data modelling, role-based access control, and REST API design.</p>
 
 <h2>Professional Experience</h2>
 <div class="entry">
@@ -46,7 +46,8 @@
   <ul>
     <li>Fixed a critical auth-middleware vulnerability where a fallback decoded JWTs <em>without signature verification</em>, allowing forged admin identities; also fixed token-refresh bugs that logged users out on successful refresh.</li>
     <li>Built cross-app session management, shipped to production: server-side token revocation (jti denylist), cross-tab logout via localStorage events, admin logout propagating across all 4 apps, token lifetime cut from 7 days to 1.</li>
-    <li>Sole developer of a field-sales CRM — Django + DRF + PostgreSQL, 5-level role hierarchy, GPS visit tracking, auto-generated daily reports; scoped a 30-module spec into a phased roadmap. Built and tested; launching shortly.</li>
+    <li>Sole developer of a live field-sales CRM, end to end — Flutter rep app, Django super-admin dashboard, DRF + PostgreSQL backend; 5-level role hierarchy, GPS visit tracking, per-visit travel-allowance calculation from vehicle and fuel use, auto-generated daily reports.</li>
+    <li>Hardened the CRM API: 500-leads/day quota via DRF ScopedRateThrottle backed by Redis; 24-hour lockout of user, session and IP after 5 failed logins. Self-hosted on an office server exposed through a Tailscale domain and tunnel.</li>
   </ul>
 </div>
 <div class="entry">
