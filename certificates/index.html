@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certificates — Abrar</title>
+<meta name="description" content="Certificates and achievements of M. Abrar Patel.">
+<link rel="icon" href="/icon.svg" sizes="any" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-icon.png" sizes="512x512" type="image/png">
+<script>
+  // Same "theme" key the main site's THEME toggle writes: light | dark | system.
+  try {
+    var t = localStorage.getItem('theme') || 'system';
+    if (t === 'system') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.classList.add(t);
+  } catch (e) {}
+</script>
+<style>
+  @font-face { font-family: 'TikTok Sans'; src: url('/fonts/TikTokSans.woff2') format('woff2'); font-weight: 300 900; font-display: swap; }
+  @font-face { font-family: 'Geist Mono'; src: url('/fonts/GeistMono[wght].woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
+
+  /* Tokens copied from the site's own :root / .dark. */
+  :root {
+    color-scheme: light;
+    --label: 0,0,0; --label-d: 54,54,48;
+    --bg: rgb(251,250,244); --elevated: #efede7;
+    --l1: rgba(var(--label),1); --l2: rgba(var(--label-d),.6); --l3: rgba(var(--label-d),.32);
+    --line: rgba(var(--label-d),.1); --accent: #c0fe04;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+      color-scheme: dark;
+      --label: 255,255,255; --label-d: 230,232,232;
+      --bg: rgb(15,17,17); --elevated: #191b1b; --line: rgba(var(--label-d),.08);
+    }
+  }
+  :root.dark {
+    color-scheme: dark;
+    --label: 255,255,255; --label-d: 230,232,232;
+    --bg: rgb(15,17,17); --elevated: #191b1b; --line: rgba(var(--label-d),.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--l1); font-family: 'TikTok Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  ::selection { background: var(--accent); color: #000; }
+  a { color: inherit; text-decoration: none; }
+  .mono { font-family: 'Geist Mono', ui-monospace, monospace; text-transform: uppercase; }
+
+  header { display: flex; justify-content: space-between; align-items: center; padding: 36px 64px; }
+  header .brand { font-weight: 700; font-size: 15px; letter-spacing: .02em; }
+  header nav { display: flex; gap: 28px; font-size: 15px; }
+  header nav a:hover, .btn:hover { opacity: .6; }
+
+  main { max-width: 832px; margin: 0 auto; padding: 72px 16px 96px; }
+  h1 { font-size: clamp(40px, 6vw, 48px); font-weight: 700; letter-spacing: -.04em; line-height: 1.05; }
+  .sub { color: var(--l2); font-size: 16px; margin-top: 12px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+
+  .cert { margin-top: 40px; }
+  .cert h2 { font-size: 22px; font-weight: 600; letter-spacing: -.02em; }
+  .meta { color: var(--l2); font-size: 14px; margin-top: 4px; }
+  .cert p { color: var(--l2); font-size: 16px; line-height: 1.6; margin-top: 14px; }
+  .cert p strong { color: var(--l1); font-weight: 600; }
+
+  .viewer { margin-top: 22px; background: var(--elevated); border-radius: 14px; overflow: hidden; aspect-ratio: 1307 / 924; }
+  .viewer object { display: block; width: 100%; height: 100%; border: 0; }
+  .fallback { height: 100%; display: grid; place-items: center; text-align: center; color: var(--l2); font-size: 14px; padding: 24px; }
+
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+  .btn { display: inline-block; padding: 10px 16px; border: 1px solid var(--l3); border-radius: 999px; font-size: 13px; }
+  .btn.primary { background: var(--l1); color: var(--bg); border-color: var(--l1); }
+
+  @media (max-width: 640px) {
+    header { padding: 24px 16px; }
+    header nav { gap: 16px; font-size: 13px; }
+    main { padding-top: 40px; }
+    .viewer { aspect-ratio: auto; height: 260px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="/">ABRAR</a>
+  <nav class="mono">
+    <a href="/#selected-work">Work</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Certificates</h1>
+  <div class="sub">Achievements, with the original certificate for each.</div>
+
+  <section class="cert" id="cool-reverse-hackathon">
+    <h2>Reverse Hackathon — Product Round Qualifier</h2>
+    <div class="meta">Organized by COOL</div>
+    <p>Qualified for the Product Round (final), <strong>ranked 2nd of 32 finalists</strong> from 1,200 participants.</p>
+
+    <div class="viewer">
+      <object data="/certificates/cool-reverse-hackathon.pdf#view=FitH&amp;toolbar=0" type="application/pdf" aria-label="COOL Reverse Hackathon certificate">
+        <div class="fallback">Your browser can't show the PDF here. Use the buttons below to open or download it.</div>
+      </object>
+    </div>
+
+    <div class="actions mono">
+      <a class="btn primary" href="/certificates/cool-reverse-hackathon.pdf" download="Abrar_Patel_COOL_Reverse_Hackathon_Certificate.pdf">Download PDF</a>
+      <a class="btn" href="/certificates/cool-reverse-hackathon.pdf" target="_blank" rel="noopener">Open full size</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
