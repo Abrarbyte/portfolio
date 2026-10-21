@@ -56,14 +56,15 @@
   .sub { color: var(--l2); font-size: 16px; margin-top: 12px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
 
   .cert { margin-top: 40px; }
+  .cert + .cert { margin-top: 56px; padding-top: 40px; border-top: 1px solid var(--line); }
   .cert h2 { font-size: 22px; font-weight: 600; letter-spacing: -.02em; }
   .meta { color: var(--l2); font-size: 14px; margin-top: 4px; }
   .cert p { color: var(--l2); font-size: 16px; line-height: 1.6; margin-top: 14px; }
   .cert p strong { color: var(--l1); font-weight: 600; }
 
-  .viewer { margin-top: 22px; background: var(--elevated); border-radius: 14px; overflow: hidden; aspect-ratio: 1307 / 924; }
-  .viewer object { display: block; width: 100%; height: 100%; border: 0; }
-  .fallback { height: 100%; display: grid; place-items: center; text-align: center; color: var(--l2); font-size: 14px; padding: 24px; }
+  .viewer { display: block; margin-top: 22px; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; }
+  .viewer img { display: block; width: 100%; height: auto; }
+  .viewer:hover { border-color: var(--l3); }
 
   .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
   .btn { display: inline-block; padding: 10px 16px; border: 1px solid var(--l3); border-radius: 999px; font-size: 13px; }
@@ -73,7 +74,6 @@
     header { padding: 24px 16px; }
     header nav { gap: 16px; font-size: 13px; }
     main { padding-top: 40px; }
-    .viewer { aspect-ratio: auto; height: 260px; }
   }
 </style>
 </head>
@@ -95,15 +95,28 @@
     <div class="meta">Organized by COOL</div>
     <p>Qualified for the Product Round (final), <strong>ranked 2nd of 32 finalists</strong> from 1,200 participants.</p>
 
-    <div class="viewer">
-      <object data="/certificates/cool-reverse-hackathon.pdf#view=FitH&amp;toolbar=0" type="application/pdf" aria-label="COOL Reverse Hackathon certificate">
-        <div class="fallback">Your browser can't show the PDF here. Use the buttons below to open or download it.</div>
-      </object>
-    </div>
+    <a class="viewer" href="/certificates/cool-reverse-hackathon.pdf" target="_blank" rel="noopener">
+      <img src="/certificates/cool-reverse-hackathon.webp" width="1600" height="1133" alt="COOL Reverse Hackathon certificate" loading="lazy" decoding="async">
+    </a>
 
     <div class="actions mono">
       <a class="btn primary" href="/certificates/cool-reverse-hackathon.pdf" download="Abrar_Patel_COOL_Reverse_Hackathon_Certificate.pdf">Download PDF</a>
       <a class="btn" href="/certificates/cool-reverse-hackathon.pdf" target="_blank" rel="noopener">Open full size</a>
+    </div>
+  </section>
+
+  <section class="cert" id="cool-reverse-hackathon-round-2">
+    <h2>Reverse Hackathon — Round 2 Qualifier</h2>
+    <div class="meta">Organized by COOL</div>
+    <p>Qualified for Round 2 of the Reverse Hackathon.</p>
+
+    <a class="viewer" href="/certificates/cool-reverse-hackathon-round-2.pdf" target="_blank" rel="noopener">
+      <img src="/certificates/cool-reverse-hackathon-round-2.webp" width="1600" height="1133" alt="COOL Reverse Hackathon Round 2 certificate" loading="lazy" decoding="async">
+    </a>
+
+    <div class="actions mono">
+      <a class="btn primary" href="/certificates/cool-reverse-hackathon-round-2.pdf" download="Abrar_Patel_COOL_Reverse_Hackathon_Round_2_Certificate.pdf">Download PDF</a>
+      <a class="btn" href="/certificates/cool-reverse-hackathon-round-2.pdf" target="_blank" rel="noopener">Open full size</a>
     </div>
   </section>
 </main>
